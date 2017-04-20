@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="demo.yc.glidedemo.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click1"
+            android:text="简单加载网络图片"/>
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click2"
+            android:text="加载图片，修改动画"/>
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click3"
+            android:text="加载，异常占位图"/>
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click4"
+            android:text="加载gif图片"/>
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="click5"
+            android:text="加载file图片,配合缓存策略"/>
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
